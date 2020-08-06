@@ -23,11 +23,13 @@ p {
 
 .global-nav {
     height: 44px;
+    padding: 0 1rem; /*모바일first로 작성하여 추후에 미디어쿼리로 확장하여 웹 크기를 맞춘다, 모바일용으로 양 옆에 패딩을 줌*/
 }
 
 .local-nav {
     height: 52px;
     border-bottom: 1px solid #ddd;
+    padding: 0 1rem;
 }
 
 .global-nav-links,
@@ -48,11 +50,35 @@ p {
     font-size: 1.4rem;
     font-weight: bold;
 }
-/* 후 */
+
 .local-nav-links a {
     font-size: 0.8rem;
 }
 
 .local-nav-links a:not(.product-name) {
     margin-left: 2em;
+}
+
+.scroll-section {
+    padding-top: 50vh;
+}
+
+#scroll-section-0 h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.main-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    height: 3em;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-message p {
+    font-weight: bold;
+    line-height: 1.2;
 }
