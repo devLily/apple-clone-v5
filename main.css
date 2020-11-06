@@ -1,84 +1,98 @@
 @charset 'utf-8';
 
 html {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:14px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
 }
 
 body {
-    overflow-x: hidden;
-    color: rgb(29, 29, 31);
-    letter-spacing: -0.05em;
-    background-color: white;
+  overflow-x: hidden;
+  color: rgb(29, 29, 31);
+  letter-spacing: -0.05em;
+  background-color: white;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 .a {
-   color: rgb(29, 29, 31);
-   text-decoration: none;
+  color: rgb(29, 29, 31);
+  text-decoration: none;
 }
 
 .global-nav {
-    height: 44px;
-    padding: 0 1rem; /*모바일first로 작성하여 추후에 미디어쿼리로 확장하여 웹 크기를 맞춘다, 모바일용으로 양 옆에 패딩을 줌*/
+  height: 44px;
+  padding: 0 1rem; /*모바일first로 작성하여 추후에 미디어쿼리로 확장하여 웹 크기를 맞춘다, 모바일용으로 양 옆에 패딩을 줌*/
 }
 
 .local-nav {
-    height: 52px;
-    border-bottom: 1px solid #ddd;
-    padding: 0 1rem;
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 1rem;
 }
 
 .global-nav-links,
 .local-nav-links {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .global-nav-links {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .local-nav-links .product-name {
-    margin-right: auto;
-    font-size: 1.4rem;
-    font-weight: bold;
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .local-nav-links a {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .local-nav-links a:not(.product-name) {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 .scroll-section {
-    padding-top: 50vh;
+  padding-top: 50vh;
 }
 
 #scroll-section-0 h1 {
-    font-size: 4rem;
-    text-align: center;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .main-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0;
-    height: 3em;
-    font-size: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  height: 3em;
+  font-size: 2.5rem;
 }
 
 .main-message p {
-    font-weight: bold;
-    line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
 }
+
+.description {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.description strong {
+  float: left;
+  margin-right: 0.2em;
+  font-size: 3rem;
+  color: rgb(29, 29, 31);
+}
+/* font-size를 rem margin = em height = em 과 같이 사용하는 이유는 
+현재 이 컨텍스트에서 폰트 사이즈에 대한 비율을 사용하겠다 라는 의미*/
